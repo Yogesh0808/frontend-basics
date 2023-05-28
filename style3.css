@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+@import url('https://icons8.com/icon/NPW07SMh7Aco/male-user');
+:root {
+    --font-style: 'Nunito Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+body {
+    background-color: black;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: var(--font-style);
+    overflow: hidden;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    Left: 50%;
+    width: 400px;
+    padding: 48px;
+    transform: translate(-50%,-50%); 
+    background: transparent;
+    backdrop-filter: blur(.9px);
+    box-shadow: 0 15px 25px rgb(0, 174, 255);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .user-box input {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px; 
+    color: #fff;
+    margin-bottom: 30px; 
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent
+}
+
+.login-box .user-box label {
+    position: relative;
+    Left: 0;
+    top: -60px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -85px;
+    Left: 0;
+    color: #d7d0ff;
+    font-size: 12px;
+}
+
+#submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #CBBDDB;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: 1px solid #00d9ff;
+    border-radius: 2px;
+    margin: auto;
+}
+
+#submit:hover {
+    background: #0cabf587;
+    color: #fff; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px #0cabf587, 0 0 25px #0c004568, 0 0 50px #2b00ff, 0 0 100px #8F7CEC;
+}
+    
+.button-form {
+    display: flex;
+    flex-direction: row; 
+    margin-top: 20px;
+}
+
+#register {
+    font-size: 14px;
+    text-decoration: none;
+    color: #CBBDDB;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+#register a {
+    margin: auto;
+    color: #e9f0ff;
+    text-decoration: none;
+}
+
+.icon {
+    float: left;
+    position: relative;
+    left: 269px;
+    top: 35px;
+    margin-left: 4%;
+}
+
+.bg-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media(max-aspect-ratio: 16/9){
+    .bg-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+p {
+    text-align: center;
+    color: #CBBDDB;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: lowercase;
+    overflow: hidden;
+    transition: .5s;
+    margin: auto;
+}
+.g_id_signin, .g_id_onload {
+    height: 80%;
+    margin-bottom: 3px;
+    border-radius: 25px;
+    padding: 20px;
+    border-color: #d7d0ff 5px;
+    
+}
+
